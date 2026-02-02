@@ -8,6 +8,7 @@ public class ClassRandomizer : MonoBehaviour
     {
         public string name;
         public bool isPresent;
+        public int preferredOrder = -1;
     }
     
     public List<Student> studentList;
@@ -33,6 +34,38 @@ public class ClassRandomizer : MonoBehaviour
             {
                 workingList.Add(student);
             }
+        }
+
+        // Any students with a preferred order?
+        List<Student> preferredList = new();
+        for (int i = workingList.Count - 1; i >= 0; i--)
+        {
+            Student student = workingList[i];
+            if (student.preferredOrder > 0)
+            {
+                preferredList.Add(student);
+                workingList.RemoveAt(i);
+            }
+        }
+
+        while (preferredList.Count > 0)
+        {
+            // Add the lowest score first
+            int bestIndex = -1;
+            int bestOrder = -1;
+            for (int i = 0; i < preferredList.Count; i++)
+            {
+                Student thisStudent = preferredList[i];
+                if (thisStudent.preferredOrder < bestOrder || bestOrder == -1)
+                {
+                    bestIndex = i;
+                    bestOrder = thisStudent.preferredOrder;
+                }
+            }
+
+            Student student = preferredList[bestIndex];
+            randomizedList.Add(student);
+            preferredList.RemoveAt(bestIndex);
         }
 
         // Randomly add these students to the randomized list
@@ -62,6 +95,11 @@ public class ClassRandomizer : MonoBehaviour
                 int nextIndex = (i + 1) % randomizedList.Count;
                 Student nextStudent = randomizedList[nextIndex];
                 outputString += $"\t> Playtester: {nextStudent.name}\n";
+            }
+
+            if (i < randomizedList.Count - 1)
+            {
+                outputString += "\n";
             }
         }
 

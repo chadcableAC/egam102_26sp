@@ -515,26 +515,37 @@ MonoBehaviour:
   studentList:
   - name: Sloan Breiner
     isPresent: 1
+    preferredOrder: 1
   - name: Kasper Chang
     isPresent: 1
+    preferredOrder: -1
   - name: Soren Cheng
     isPresent: 1
+    preferredOrder: -1
   - name: Zion Kim
     isPresent: 1
+    preferredOrder: -1
   - name: Vulx Li
     isPresent: 1
+    preferredOrder: -1
   - name: Amare Liu
     isPresent: 1
+    preferredOrder: -1
   - name: Siyi Lyu
     isPresent: 1
+    preferredOrder: -1
   - name: Lloyd Pan
     isPresent: 1
+    preferredOrder: -1
   - name: Amy Wu
     isPresent: 1
+    preferredOrder: -1
   - name: Forest Wu
     isPresent: 1
+    preferredOrder: -1
   - name: Yi Yang
     isPresent: 1
+    preferredOrder: -1
   isPlaytest: 0
 --- !u!1 &1637129080
 GameObject:
