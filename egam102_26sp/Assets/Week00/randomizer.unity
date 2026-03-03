@@ -531,11 +531,11 @@ MonoBehaviour:
   - name: Amare Liu
     isPresent: 1
     preferredOrder: -1
-  - name: Siyi Lyu
-    isPresent: 1
+  - name: Anika Lyu
+    isPresent: 0
     preferredOrder: -1
   - name: Lloyd Pan
-    isPresent: 1
+    isPresent: 0
     preferredOrder: -1
   - name: Amy Wu
     isPresent: 1
@@ -546,7 +546,7 @@ MonoBehaviour:
   - name: Yi Yang
     isPresent: 1
     preferredOrder: -1
-  isPlaytest: 0
+  isPlaytest: 1
 --- !u!1 &1637129080
 GameObject:
   m_ObjectHideFlags: 0
