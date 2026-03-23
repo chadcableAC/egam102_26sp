@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Week02/itch_demo.unity
     guid: a00a123c89e46406485855c9fcac34b5
+  - enabled: 1
+    path: Assets/Week10/scene_loader.unity
+    guid: f4d9a06099113423c8bc606769ab3c6a
+  - enabled: 1
+    path: Assets/Week04/feedback_demo.unity
+    guid: 1ddeea3c8647b4fbc94a68500fccb7de
+  - enabled: 1
+    path: Assets/Week03/ball.unity
+    guid: 31974b4f5dbe1490d80e198b268a4b2c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
